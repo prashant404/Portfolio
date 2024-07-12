@@ -204,14 +204,10 @@
         </p>
         <p>
         <ul>
-          <li><b>Languages:</b>C++, C#, Java,Python, JavaScript, TypeScript, HTML5, CSS3</li>
+          <li><b>Languages:</b>C++, C#, Java, Python,JavaScript, TypeScript,HTML/CSS</li>
           <li><b>Databases:</b> MySQL, MongoDB, Oracle</li>
-          <li><b>Frameworks:</b> Bootstrap, Material UI, jQuery, React JS, Node JS, Express JS, Angular, ASP.NET MVC,
-            ASP.NET Core, MERN,
-            Redux</li>
-          <li><b>Tools & Technologies:</b> Data Structures and Algorithms, Windows, Linux, Machine Learning, Problem
-            Solving, Cloud, AWS, Microsoft Azure, Git, Microservices, Analytical Skills, RESTful API, Network,
-            Collaboratives, Research, Coding, Accountability, Reliability.</li>
+          <li><b>Frameworks:</b> React,Angular,Node.js,Asp .NET MVC ,Asp .NET WebApi</li>
+          <li><b>Tools & Technologies:</b> Git,Heroku</li>
         </ul>
 
         </p>
@@ -545,7 +541,18 @@
 
   <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
 </body>
 
 </html>

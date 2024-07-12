@@ -697,3 +697,22 @@ a{
   cursor: pointer;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 992px) {
+  nav .nav-wrapper {
+    text-align: center;
+  }
+  nav .nav-wrapper .name-title {
+    float: none;
+    display: inline-block;
+  }
+  nav .nav-wrapper ul.right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav .nav-wrapper .name-title {
+    font-size: 0.9em;
+  }
+}
