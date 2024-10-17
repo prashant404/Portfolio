@@ -1,23 +1,19 @@
 .profile-pic {
   position: relative;
-  max-width:130px;
-  max-height:130px;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-  /* display: inline-block; */
-  
-  
-  /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
-  border: 3px solid rgba(0, 77, 64, 0.4); 
-  border-radius: 50% !important;
+  width: 130px; /* Set a fixed width for the profile picture */
+  height: 130px; /* Set a fixed height for the profile picture */
+  border-radius: 50%; /* This makes it round */
+  overflow: hidden; /* Ensures that the image does not overflow out of the container */
+  border: 3px solid rgba(0, 77, 64, 0.4); /* Border for the profile picture */
+  margin-left: -7px; /* Adjust margins as needed */
+  margin-top: -31px; /* Adjust top margin */
 }
 
 .profile-pic img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%; /* Maintain the aspect ratio within the circular frame */
+  object-fit: cover; /* This ensures the image scales properly inside the circle without being distorted */
+  border-radius: 50%; /* Ensures the image itself is round */
 }
 
 .tracker {
